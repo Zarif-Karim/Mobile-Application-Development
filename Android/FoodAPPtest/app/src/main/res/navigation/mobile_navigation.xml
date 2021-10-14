@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.assignmenttest.ui.restaurant.RestaurantFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_foodFragment"
+            app:destination="@id/foodFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.assignmenttest.ui.forYou.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.assignmenttest.ui.orders.OrdersFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_orders" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_notifications_self"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.example.assignmenttest.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment2_to_accountInfo2"
+            app:destination="@id/accountInfo2" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_countrySelect"
+            app:destination="@id/countrySelect" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_manageRestaurants"
+            app:destination="@id/manageRestaurants" />
+        <action
+            android:id="@+id/action_settingsFragment2_to_manageFood"
+            app:destination="@id/manageFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountInfo2"
+        android:name="com.example.assignmenttest.ui.settings.AccountInfo"
+        android:label="fragment_account_info"
+        tools:layout="@layout/fragment_account_info" >
+        <action
+            android:id="@+id/action_accountInfo2_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/countrySelect"
+        android:name="com.example.assignmenttest.ui.settings.CountrySelect"
+        android:label="fragment_country_select"
+        tools:layout="@layout/fragment_country_select" >
+        <action
+            android:id="@+id/action_countrySelect_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageRestaurants"
+        android:name="com.example.assignmenttest.ui.settings.ManageRestaurants"
+        android:label="fragment_manage_restaurants"
+        tools:layout="@layout/fragment_manage_restaurants" >
+        <action
+            android:id="@+id/action_manageRestaurants_to_settingsFragment22"
+            app:destination="@id/settingsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageFood"
+        android:name="com.example.assignmenttest.ui.settings.ManageFood"
+        android:label="fragment_manage_food"
+        tools:layout="@layout/fragment_manage_food" >
+        <action
+            android:id="@+id/action_manageFood_to_settingsFragment2"
+            app:destination="@id/settingsFragment2" />
+        <action
+            android:id="@+id/action_manageFood_to_editFood"
+            app:destination="@id/editFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFood"
+        android:name="com.example.assignmenttest.ui.settings.EditFood"
+        android:label="fragment_edit_food"
+        tools:layout="@layout/fragment_edit_food" >
+        <action
+            android:id="@+id/action_editFood_to_manageFood"
+            app:destination="@id/manageFood" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodFragment"
+        android:name="com.example.assignmenttest.ui.restaurant.FoodFragment"
+        android:label="fragment_food"
+        tools:layout="@layout/fragment_food" />
+</navigation>

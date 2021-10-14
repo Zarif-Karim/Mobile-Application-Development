@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a33.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/tom"
+        android:orderInCategory="100"
+        android:title="Tomato"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/bq"
+        android:orderInCategory="100"
+        android:title="BBQ"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/sch"
+        android:orderInCategory="100"
+        android:title="Sweet Chilli"
+        app:showAsAction="always" />
+</menu>
