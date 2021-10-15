@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "63780015-A808-4042-8D15-7D3D9E3275E2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C165E50-5FFB-41FE-B363-5C552B35D665"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tute10/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "numberOfComponents(in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tute10/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E - 7a8177a42d2a778e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tute10.ViewController.pickerData.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Tute10"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhsana/Desktop/Projects%20Zarif/Tute10/Tute10/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E - d3f566cf4c1c1be2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tute10.ViewController.pickerData.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Tute10"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhsana/Desktop/Projects%20Zarif/Tute10/Tute10/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E - 7e80e0a64fea4eb6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tute10.ViewController.pickerData.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Tute10"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhsana/Desktop/Projects%20Zarif/Tute10/Tute10/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E - 6073052e4d907442"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tute10.ViewController.pickerData.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Tute10"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhsana/Desktop/Projects%20Zarif/Tute10/Tute10/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E - 8577cdc9e1cbffac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tute10.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Tute10.ViewController"
+                  moduleName = "Tute10"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhsana/Desktop/Projects%20Zarif/Tute10/Tute10/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "6B08D2D5-8A02-4F57-9028-CE60161F957E - b6007d630894bb38"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tute10.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Tute10.ViewController&gt;"
+                  moduleName = "Tute10"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhsana/Desktop/Projects%20Zarif/Tute10/Tute10/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

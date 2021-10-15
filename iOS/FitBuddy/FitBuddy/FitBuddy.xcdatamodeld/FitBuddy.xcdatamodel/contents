@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H15" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="catID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="catName" optional="YES" attributeType="String"/>
+        <relationship name="catDay" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" inverseName="dayCat" inverseEntity="Day"/>
+        <relationship name="catEx" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Exercise" inverseName="exCat" inverseEntity="Exercise"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES" codeGenerationType="class">
+        <attribute name="dayName" optional="YES" attributeType="String"/>
+        <relationship name="dayCat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="catDay" inverseEntity="Category"/>
+        <relationship name="dayP" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Program" inverseName="pDays" inverseEntity="Program"/>
+        <relationship name="exercises" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutDB" inverseName="day" inverseEntity="WorkoutDB"/>
+    </entity>
+    <entity name="Exercise" representedClassName="Exercise" syncable="YES" codeGenerationType="class">
+        <attribute name="exDescription" optional="YES" attributeType="String"/>
+        <attribute name="exID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="exName" optional="YES" attributeType="String"/>
+        <relationship name="exCat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="catEx" inverseEntity="Category"/>
+        <relationship name="wDB" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="WorkoutDB" inverseName="forEx" inverseEntity="WorkoutDB"/>
+    </entity>
+    <entity name="Log" representedClassName="Log" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="day" optional="YES" attributeType="String"/>
+        <attribute name="program" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Program" representedClassName="Program" syncable="YES" codeGenerationType="class">
+        <attribute name="dpw" optional="YES" attributeType="String"/>
+        <attribute name="pName" optional="YES" attributeType="String"/>
+        <attribute name="progID" optional="YES" attributeType="String"/>
+        <relationship name="pDays" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Day" inverseName="dayP" inverseEntity="Day"/>
+    </entity>
+    <entity name="WorkoutDB" representedClassName="WorkoutDB" syncable="YES" codeGenerationType="class">
+        <attribute name="reps" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sets" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Day" inverseName="exercises" inverseEntity="Day"/>
+        <relationship name="forEx" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Exercise" inverseName="wDB" inverseEntity="Exercise"/>
+    </entity>
+    <elements>
+        <element name="Category" positionX="398.89453125" positionY="5025.69921875" width="128" height="103"/>
+        <element name="Day" positionX="599.44140625" positionY="5082.140625" width="128" height="103"/>
+        <element name="Exercise" positionX="223.62890625" positionY="5122.09765625" width="128" height="118"/>
+        <element name="Program" positionX="742.234375" positionY="5218.7890625" width="128" height="103"/>
+        <element name="WorkoutDB" positionX="417.421875" positionY="5280.90234375" width="128" height="118"/>
+        <element name="Log" positionX="432" positionY="5175" width="128" height="103"/>
+    </elements>
+</model>
